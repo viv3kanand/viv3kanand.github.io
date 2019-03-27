@@ -1,13 +1,12 @@
 # Site settings
-title: Fong Chun Chan's Blog
-email: fongchun@alumni.ubc.ca
+title: viv3kanand
+email: viv3kanand@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  A blog about bioinformatics, cancer research, R, statistics and 
-  BIG data
+  My first try
 baseurl: "" # the subpath of your site, e.g. /blog/
 #url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: fongchunchan
-github_username:  tinyheero
+twitter_username: viv3kanand
+github_username:  viv3kanand
 
 markdown: kramdown
 
@@ -17,4 +16,4 @@ kramdown:
 highlighter: rouge
 
 # Google services
-google_analytics: UA-87660981-1
+google_analytics: UA-134917688-1

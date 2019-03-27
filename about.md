@@ -20,7 +20,7 @@ I have a passion for applying statistical and machine learning approaches to big
 
 * I have expertise in dealing with big data in the R programming language (e.g. data.table, tidyr, dplyr) and a thorough understanding of the core principles around R
 * I have extensive experience in doing reproducible research through interactive applications and D3 web reporting (e.g. Rmarkdown, knitr, pandoc, git, shiny)
-* I have expertise in developing/managing big data processing pipelines through the Make engine with experience in using ruffus, bpipe, snakemake, and nextflow. 
+* I have expertise in developing/managing big data processing pipelines through the Make engine with experience in using ruffus, bpipe, snakemake, and nextflow.
 * I have experience in continuous integration/unit testing in production based workflows.
 
 <h3>Selected Publications <small><a href="https://scholar.google.co.in/citations?user=BbZVuYMAAAAJ&hl=en&oi=ao" target="_new">[Google Scholar]</a></small>
