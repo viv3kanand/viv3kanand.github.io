@@ -1,0 +1,92 @@
+---
+layout: post
+title:  "A retrospective view of muscle disease in PrP-overexpressing mice"
+date:   2014-08-26 12:00:00
+author: ericminikel
+categories: 
+location: Boston, MA
+summary200: Twenty years ago it was reported that over-expression of wild-type prion protein caused a muscle disease in transgenic mice, but the cause was never entirely clear. Was this a prion disease?
+---
+
+Only recently, I got around to giving one of the prion classics, [[Westaway 1994]], a thorough read. Despite being now 20 years old, the paper contained a number of surprises for me that I wasn't able to sort out until I tracked down two of the authors and plied them with questions at Prion2014.
+
+The paper describes a spontaneous disease in several lines of mice overexpressing wild-type PrP. By this time in the early 1990s, the Prusiner lab had made dozens of different transgenic lines, and people had started to notice that mice in some of these lines got sick as they aged. The symptoms variably included:
+
++ Vacuolation and astrogliosis in the brain 
++ Demyelinating neuropathy - some peripheral nerve axons were thinly myelinated and others were lost entirely
++ Necrotizing myopathy - degeneration of skeletal (but not smooth or cardiac) muscle fibers, centronuclear myopathy, and endomysial fibrosis (intrusion of fat and connective tissue into muscle).
++ Tremor, kyphosis (arching of the spine), ataxia (impaired gait), paresis (weakness of movement) or even paralysis, presumably as a downstream consequence of one or more of the three above changes.
+
+The illness was observed in mice expressing sheep PrP (ShePrP), Syrian hamster PrP (SHaPrP) and the mouse PrP-B allele. (The MoPrP amino acid sequence in the modern mm10 reference genome, found in the most commonly used inbred mouse lines including B6, 129 and FVB is known as PrP-A. The PrP-B sequence differs by two substitutions, L108F and T189V [[Westaway 1987]]). The penetrance and age of onset were variable and correlated with expression level - the mouse lines with the highest transgene copy numbers had the worst illness.
+
+So what *was* this disease? Nowadays, there are mice expressing wild-type bank vole PrP, which develop a spontaneous disease which is clearly prion disease, as it is readily transmissible to wild-type mice [[Watts 2012]]. Were the symptoms described in [[Westaway 1994]] just an earlier incarnation of this same sort of spontaneous disease? The package of symptoms listed above is a strange mix of things. Vacuolation and astrogliosis in the brain are classic neuropathological changes associated with prion disease, the paper describes these changes as being indistinguishable from scrapie except that they were less severe. On the other hand, peripheral demyelinating neuropathy is now known to be a symptom of PrP *knockout* [[Bremer 2010]], so when I first saw that I struggled to reconcile this loss-of-function phenotype with the expected gain-of-function due to overexpression. (In fact, the details of the symptoms are a bit different - PrP knockout mice show evidence of repeated de- and re-myelination cycles in their nerves, while the PrP overexpressers just had thin myelin with no evidence of repeated re-myelination). And then the muscle disease symptoms are unlike anything else I had heard described as associated with prions, though the paper cites one reported prion disease pedigree (later revealed to be P102L) which did have some pathological changes in muscle [[Rosenthal 1976]].
+
+The paper is ambiguous about whether the disease ultimately proved transmissible:
+
+> At the time of writing, brain extracts from five clinically ill Tg(SHaPrP+/+)7 mice have transmitted scrapie-like neurologic disease to Syrian hamsters (D. G. and S. B. P., unpublished data). 
+
+After reading this sentence I searched Google Scholar for any paper on this disease's transmission to hamsters by Darlene Groth and Stanley B. Prusiner published within the next few years after 1994, but there was nothing to be found.
+
+To try to answer my questions, I tracked down David Westaway and George Carlson to ask what the deal was. It turns out there never was a final answer on the transmissibility question. David Westaway said that some successful transmissions of this disease to Tg81 mice (overexpressing SHaPrP) and wild-type hamsters (via i.c. inoculation of brain homogenate) were indeed observed at UCSF, but that he didn't have time to follow up further on it because he left the Prusiner lab just a month after this paper was published. George Carlson told me that he also attempted transmissions at the then newly renamed McLaughlin Research Institute, which had never housed prions before. All of those transmissions were negative, which made him wonder if perhaps the successful transmissions at UCSF could have been due to contamination. However he also allowed that the brain disease and perhaps even the muscle disease could have indeed been transmissible, and that the issue had never been canvassed thoroughly.
+
+George Carlson explained that the team had spent lots of time looking for neurological disease (which turned out to be mild) and worrying about the infectivity of brain extracts, only belatedly realizing that most of the pathological changes were actually in muscle. He called it a classic case of looking where you expect to see a problem and missing what's right in front of you. He explained that the disease the mice suffered would probably be best characterized as an [inclusion body myositis](http://en.wikipedia.org/wiki/Inclusion_body_myositis), a disease in which inclusion bodies - sometimes full of protein aggregates - accumulate in muscle. In humans, there are [hereditary inclusion body myopathies](http://en.wikipedia.org/wiki/Hereditary_inclusion_body_myopathy) caused by mutations in genes like *MYH2*, *GNE*, and *VCP* - genes we examine in our Mendelian muscle disease cohorts here in the [MacArthur Lab](http://macarthurlab.org/). There are also sporadic inclusion body myopathies in which muscle accumulates aggregates of amyloidogenic or aggregation-prone proteins like A&beta; and TDP-43. George Carlson speculated that the muscle disease observed in the mice from [[Westaway 1994]] was probably similar to this latter group of diseases, but with PrP instead of A&beta; or other proteins forming the aggregates. David Westaway agreed with this assessment, and said that most of the symptoms in the mice were probably due to PrP aggregation in muscle, which might or might not have been transmissible but was definitely distinct from scrapie.
+
+This paper is, then, evidence of yet *another* way that PrP can be pathogenic. In mice, deletions of the central region cause cerebellar generation [[Shmerling 1998], [Li 2007]], alpha helix deletions cause neuronal storage disease [[Muramoto 1997]], expression under a foreign promoter causes runting and often embryonic lethality [[Tremblay 1998]], and apparently overexpression can cause inclusion body myopathy too [[Westaway 1994]] - all distinct phenotypes and all apparently unrelated to prion disease.
+
+*Update added September 1, 2014:*
+
+After posting the original version of this post, I emailed with Carlson and Westaway about one question which the original paper did not decisively resolve: why some transgenic lines, but not others, get the myopathy.
+
+As pointed out in the original paper, the penetrance of the myopathy is correlated with transgene copy number and therefore with PrP expression level. However, this probably isn't the sole factor determining spontaneous disease, because myopathy has never been observed in mice over-expressing MoPrP-A, such as Tga20 [[Fischer 1996]] or Tg4053 [[Carlson 1994]].
+
+If expression level *alone* is not responsible, then another possible explanation is that the myopathy depends upon the particular spatial and temporal expression pattern of the transgenes. The SHaPrP mice expressed a [cosmid clone](http://en.wikipedia.org/wiki/Cosmid) of the entire *Prnp* gene isolated from hamsters (named "cosTet") [[Scott 1992]], and the MoPrP-B mice expressed a cosmid clone from ILnJ-4 mice [[Westaway 1991]], whereas Charles Weissman's Tga20 mice expressed a "half-genomic construct" which lacks one intron and is not expressed in Purkinje cells of the cerebellum [[Fischer 1996]]. Westaway's group eventually discovered that the <i>Prnp<sup>b</sup></i> cosmid also included the *Prnd* gene, which can cause cerebellar degeneration if expressed in the brain [[Moore 1999]]. Qingzhong Kong's group has more recently shown that inducible expression of HuPrP in muscle under a tetracycline switch is also sufficient to cause myopathy [[Huang 2007]]. The fact that each of these transgenic lines expresses a whole different transgene (not just a different open reading frame) argues that expression patterns could be a part of the answer.
+
+On the other hand, Tg4053 mice [[Carlson 1994]] express the same cosTet cosmid from hamsters as the myopathic SHaPrP Tg7 mice do, with the MoPrP-A open reading frame swapped in for SHaPrP. These two lines of mice, then, express the same construct, and only the amino acid sequence differs. It's true that Tg4053 is but *one* transgenic line, so based on this evidence alone one can't entirely rule out the possibility that different copy number or integration sites could contribute to the presence of myopathy in Tg7 mice and its absence in Tg4053 mice. But consider that the bank vole PrP mice in [[Watts 2012]] express the BvPrP open reading frame cloned into (again) that same cosTet cosmid, and have a highly penetrant and readily transmissible spontaneous prion disease which is clearly distinct from the myopathy in Tg7 mice. Moreover, the differences between BvPrP 109I and BvPrP 109M (again in the same construct) [[Watts 2012], [Watts 2014]] and the permissibility of bank voles themselves to prion infection [e.g. [Nonno 2006]] argues that amino acid sequence matters. Finally, myopathy has also been observed in mice expressing two different pathogenic PrPs - Karen Hsiao's P101L mice [[Telling 1996]] and (as helpfully pointed out in a comment below by Emiliano Biasini) Roberto Chiesa's PG14 mice [[Chiesa 2001]], suggesting, again, that the sequence of the PrP itself may be responsible.
+
+*David Westaway and George Carlson each gave permission for their comments to be shared here.*
+
+[Westaway 1994]: http://www.ncbi.nlm.nih.gov/pubmed/8287472 "Westaway D, DeArmond SJ, Cayetano-Canlas J, Groth D, Foster D, Yang SL, Torchia M, Carlson GA, Prusiner SB. Degeneration of skeletal muscle, peripheral nerves, and the central nervous system in transgenic mice overexpressing wild-type prion proteins. Cell. 1994 Jan 14;76(1):117-29. PubMed PMID: 8287472."
+
+[Westaway 1987]: http://www.ncbi.nlm.nih.gov/pubmed/2890436 "Westaway D, Goodman PA, Mirenda CA, McKinley MP, Carlson GA, Prusiner SB. Distinct prion proteins in short and long scrapie incubation period mice. Cell. 1987 Nov 20;51(4):651-62. PubMed PMID: 2890436."
+
+[Bremer 2010]: http://www.ncbi.nlm.nih.gov/pubmed/20098419 "Bremer J, Baumann F, Tiberi C, Wessig C, Fischer H, Black P, Steele AD, Toyka KV, Nave KA, Weis J, Aguzzi A. Axonal prion protein is required for peripheral myelin maintenance. Nat Neurosci. 2010 Mar, 13 (3): 310-8. doi: 10.1038 / nn.2483. Epub 2010 Jan 24 PubMed PMID: 20098419"
+
+[Watts 2012]: http://www.ncbi.nlm.nih.gov/pubmed/22331873 "Watts JC, Giles K, Stöhr J, Oehler A, Bhardwaj S, Grillo SK, Patel S, DeArmond SJ, Prusiner SB. Spontaneous generation of rapidly transmissible prions in transgenic mice expressing wild-type bank vole prion protein. Proc Natl Acad Sci U S A. 2012 Feb 28;109(9):3498-503. doi: 10.1073/pnas.1121556109. Epub 2012 Feb 13. PubMed PMID: 22331873; PubMed Central PMCID: PMC3295307."
+
+[Rosenthal 1976]: http://www.ncbi.nlm.nih.gov/pubmed/769760 "Rosenthal NP, Keesey J, Crandall B, Brown WJ. Familial neurological disease associated with spongiform encephalopathy. Arch Neurol. 1976 Apr;33(4):252-9. PubMed PMID: 769760."
+
+[Muramoto 1997]: http://www.ncbi.nlm.nih.gov/pubmed/9212101 "Muramoto T, DeArmond SJ, Scott M, Telling GC, Cohen FE, Prusiner SB. Heritable disorder resembling neuronal storage disease in mice expressing prion protein with deletion of an alpha-helix. Nat Med. 1997 Jul;3(7):750-5. PubMed PMID: 9212101."
+
+[Shmerling 1998]: http://www.ncbi.nlm.nih.gov/pubmed/9568713 "Shmerling D, Hegyi I, Fischer M, Blättler T, Brandner S, Götz J, Rülicke T, Flechsig E, Cozzio A, von Mering C, Hangartner C, Aguzzi A, Weissmann C. Expression of amino-terminally truncated PrP in the mouse leading to ataxia and specific cerebellar lesions. Cell. 1998 Apr 17;93(2):203-14. PubMed PMID: 9568713."
+
+[Li 2007]: http://www.ncbi.nlm.nih.gov/pubmed/17245437 "Li A, Christensen HM, Stewart LR, Roth KA, Chiesa R, Harris DA. Neonatal lethality in transgenic mice expressing prion protein with a deletion of residues 105-125. EMBO J. 2007 Jan 24;26(2):548-58. PubMed PMID: 17245437; PubMed Central PMCID: PMC1783448."
+
+[Tremblay 1998]: http://www.ncbi.nlm.nih.gov/pubmed/9770528/ "Tremblay P, Meiner Z, Galou M, Heinrich C, Petromilli C, Lisse T, Cayetano J,  Torchia M, Mobley W, Bujard H, DeArmond SJ, Prusiner SB. Doxycycline control of prion protein transgene expression modulates prion disease in mice. Proc Natl Acad Sci U S A. 1998 Oct 13;95(21):12580-5. PubMed PMID: 9770528; PubMed Central  PMCID: PMC22873."
+
+[Fischer 1996]: http://www.ncbi.nlm.nih.gov/pubmed/8635458/ "Fischer M, Rülicke T, Raeber A, Sailer A, Moser M, Oesch B, Brandner S, Aguzzi A, Weissmann C. Prion protein (PrP) with amino-proximal deletions restoring susceptibility of PrP knockout mice to scrapie. EMBO J. 1996 Mar 15;15(6):1255-64. PubMed PMID: 8635458; PubMed Central PMCID: PMC450028."
+
+[Ghaemmaghami 2013]: http://www.ncbi.nlm.nih.gov/pubmed/23438476 "Ghaemmaghami S, Colby DW, Nguyen HO, Hayashi S, Oehler A, DeArmond SJ, Prusiner SB. Convergent replication of mouse synthetic prion strains. Am J Pathol. 2013 Mar;182(3):866-74. doi: 10.1016/j.ajpath.2012.11.038. PubMed PMID: 23438476; PubMed Central PMCID: PMC3586687."
+
+[Carlson 1986]: http://www.ncbi.nlm.nih.gov/pubmed/3015416 "Carlson GA, Kingsbury DT, Goodman PA, Coleman S, Marshall ST, DeArmond S, Westaway D, Prusiner SB. Linkage of prion protein and scrapie incubation time genes. Cell. 1986 Aug 15;46(4):503-11. PubMed PMID: 3015416."
+
+[Giri 2006]: http://www.ncbi.nlm.nih.gov/pubmed/16495413 "Giri RK, Young R, Pitstick R, DeArmond SJ, Prusiner SB, Carlson GA. Prion infection of mouse neurospheres. Proc Natl Acad Sci U S A. 2006 Mar 7;103(10):3875-80. Epub 2006 Feb 22. PubMed PMID: 16495413; PubMed Central PMCID: PMC1533787."
+
+[Prusiner 1991]: http://www.ncbi.nlm.nih.gov/pubmed/1675487 "Prusiner SB. Molecular biology of prion diseases. Science. 1991 Jun 14;252(5012):1515-22. Review. PubMed PMID: 1675487."
+
+[Westaway 1991]: http://www.ncbi.nlm.nih.gov/pubmed/1676894 "Westaway D, Mirenda CA, Foster D, Zebarjadian Y, Scott M, Torchia M, Yang SL,  Serban H, DeArmond SJ, Ebeling C, et al. Paradoxical shortening of scrapie incubation times by expression of prion protein transgenes derived from long incubation period mice. Neuron. 1991 Jul;7(1):59-68. PubMed PMID: 1676894."
+
+[Scott 1992]: http://www.ncbi.nlm.nih.gov/pubmed/1338978 "Scott MR, Köhler R, Foster D, Prusiner SB. Chimeric prion protein expression in cultured cells and transgenic mice. Protein Sci. 1992 Aug;1(8):986-97. PubMed  PMID: 1338978; PubMed Central PMCID: PMC2142161."
+
+[Moore 1999]: http://www.ncbi.nlm.nih.gov/pubmed/10525406 "Moore RC, Lee IY, Silverman GL, Harrison PM, Strome R, Heinrich C, Karunaratne A, Pasternak SH, Chishti MA, Liang Y, Mastrangelo P, Wang K, Smit AF, Katamine S, Carlson GA, Cohen FE, Prusiner SB, Melton DW, Tremblay P, Hood LE, Westaway D. Ataxia in prion protein (PrP)-deficient mice is associated with upregulation of the novel PrP-like protein doppel. J Mol Biol. 1999 Oct 1;292(4):797-817. PubMed  PMID: 10525406."
+
+[Telling 1996]: http://www.ncbi.nlm.nih.gov/pubmed/8698234 "Telling GC, Haga T, Torchia M, Tremblay P, DeArmond SJ, Prusiner SB. Interactions between wild-type and mutant prion proteins modulate neurodegeneration in transgenic mice. Genes Dev. 1996 Jul 15;10(14):1736-50. PubMed PMID: 8698234."
+
+[Chiesa 2001]: http://www.ncbi.nlm.nih.gov/pubmed/11300723 "Chiesa R, Pestronk A, Schmidt RE, Tourtellotte WG, Ghetti B, Piccardo P, Harris DA. Primary myopathy and accumulation of PrPSc-like molecules in peripheral tissues of transgenic mice expressing a prion protein insertional mutation. Neurobiol Dis. 2001 Apr;8(2):279-88. PubMed PMID: 11300723."
+
+[Huang 2007]: http://www.ncbi.nlm.nih.gov/pubmed/17420473 "Huang S, Liang J, Zheng M, Li X, Wang M, Wang P, Vanegas D, Wu D, Chakraborty  B, Hays AP, Chen K, Chen SG, Booth S, Cohen M, Gambetti P, Kong Q. Inducible overexpression of wild-type prion protein in the muscles leads to a primary myopathy in transgenic mice. Proc Natl Acad Sci U S A. 2007 Apr 17;104(16):6800-5. Epub 2007 Apr 9. PubMed PMID: 17420473; PubMed Central PMCID:  PMC1871865."
+
+[Carlson 1994]: http://www.ncbi.nlm.nih.gov/pubmed/7911243/ "Carlson GA, Ebeling C, Yang SL, Telling G, Torchia M, Groth D, Westaway D, DeArmond SJ, Prusiner SB. Prion isolate specified allotypic interactions between  the cellular and scrapie prion proteins in congenic and transgenic mice. Proc Natl Acad Sci U S A. 1994 Jun 7;91(12):5690-4. PubMed PMID: 7911243; PubMed Central PMCID: PMC44062."
+
+[Watts 2014]: http://www.ncbi.nlm.nih.gov/pubmed/24699458 "Watts JC, Giles K, Patel S, Oehler A, DeArmond SJ, Prusiner SB. Evidence that  bank vole PrP is a universal acceptor for prions. PLoS Pathog. 2014 Apr 3;10(4):e1003990. doi: 10.1371/journal.ppat.1003990. eCollection 2014 Apr. PubMed PMID: 24699458; PubMed Central PMCID: PMC3974871."
+
+[Nonno 2006]: http://www.ncbi.nlm.nih.gov/pubmed/16518470/ "Nonno R, Di Bari MA, Cardone F, Vaccari G, Fazzi P, Dell'Omo G, Cartoni C, Ingrosso L, Boyle A, Galeno R, Sbriccoli M, Lipp HP, Bruce M, Pocchiari M, Agrimi U. Efficient transmission and characterization of Creutzfeldt-Jakob disease strains in bank voles. PLoS Pathog. 2006 Feb;2(2):e12. Epub 2006 Feb 24. PubMed PMID: 16518470; PubMed Central PMCID: PMC1383487."

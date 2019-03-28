@@ -1,24 +1,39 @@
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{% if page.summary200 %}{{ page.summary200 }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="canonical" href="{% if page.url == '/' %}http://www.cureffi.org/archives/{% else %}{{ page.url }}{% endif %}">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/main.css">
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ "/css/syntax-style.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ "/css/site.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-42627224-1', 'auto');
+      ga('send', 'pageview');
+    </script>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
-  <script type="text/javascript" src="{{ "/js/jquery-1.11.3.min.js" | prepend: site.baseurl }}"></script>
-  <script type="text/javascript" src="{{ "/js/jq_mathjax_parse.js" | prepend: site.baseurl }}"></script>
-  <script type="text/javascript" src="{{ "/js/jquery.toc.min.js" | prepend: site.baseurl }}"></script>
+    <!-- Twitter Cards -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:site" content="cureffi" />
+    <meta property="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+    <meta property="twitter:description" content="{% if page.summary200 %}{{ page.summary200 }}{% endif %}" />
+    <meta property="twitter:image" content="{% if page.thumb120 %}{{ page.thumb120 }}{% endif %}" />
+    <meta property="twitter:url" content="{{ page.url }}" />
 
-  {% if jekyll.environment == 'production' %}
-  {% include analytics.html %}
-  {% endif %}
+    <!-- MathJax -->
+    <script type="text/javascript"
+            src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+                tex2jax: {inlineMath: [['$$','$$']]}
+            });
+    </script>
 </head>
