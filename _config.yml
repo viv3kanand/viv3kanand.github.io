@@ -1,10 +1,10 @@
 # Site settings
-title: CureFFI.org
-twitter_username: cureffi
-github_username: ericminikel
+title: Curious mofo
+twitter_username: viv3kanand
+github_username: viv3kanand
 description: "Not if, when."
 baseurl: ""
-url: "http://www.cureffi.org"
+url:
 future: true
 
 # Build settings
