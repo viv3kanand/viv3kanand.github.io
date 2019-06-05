@@ -4,8 +4,8 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="{% if page.summary200 %}{{ page.summary200 }}{% else %}{{ site.description }}{% endif %}">
-    <link rel="canonical" href="{% if page.url == '/' %}http://www.cureffi.org/archives/{% else %}{{ page.url }}{% endif %}">
-
+    <link rel="canonical" href="{% if page.url == '/' %}https://viv3kanand.github.io/archives/{% else %}{{ page.url }}{% endif %}">
+    <link rel="icon" href="/imgs/flavicon.png" type="image/x-icon">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/main.css">
 
@@ -21,7 +21,7 @@
 
     <!-- Twitter Cards -->
     <meta property="twitter:card" content="summary" />
-    <meta property="twitter:site" content="cureffi" />
+    <meta property="twitter:site" content="viv3kanand" />
     <meta property="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
     <meta property="twitter:description" content="{% if page.summary200 %}{{ page.summary200 }}{% endif %}" />
     <meta property="twitter:image" content="{% if page.thumb120 %}{{ page.thumb120 }}{% endif %}" />
