@@ -15,7 +15,7 @@ layout: default
   <!-- Author details - used code from http://blog.sorryapp.com/blogging-with-jekyll/2014/02/06/adding-authors-to-your-jekyll-site.html -->
   <!-- Look the author details up from the site config. -->
   {% assign author = site.data.authors[page.author] %}
-  
+
   <!-- Output author details if some exist. -->
   {% if author %}
       <div class="author-info">
@@ -27,8 +27,8 @@ layout: default
             <a href="https://twitter.com/{{ author.twitter }}" class="twitter-follow-button" data-show-count="false">Follow @{{ author.twitter }}</a>
             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
             {% endif %}</p>
-            </div> 
-        </div> 
+            </div>
+        </div>
         <div style="clear: both;" />
   {% endif %}
 </div>
