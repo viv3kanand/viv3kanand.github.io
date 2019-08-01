@@ -5,7 +5,7 @@ permalink: /archives/
 header: true
 ---
 
-<p class="meta">everything &middot; <a href="/tag1/">Tag1</a></p>
+<p class="meta">everything &middot; <a href="/R/">R</a></p>
 
 <ul>
 {% for post in site.posts %}
