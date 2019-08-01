@@ -19,4 +19,4 @@ Yet, I suck bad at designing a theme for the blog by myself with Jekyll. And nev
 
 After scratching over the **liquid** style coding **Jekyll** has, I figured how to customize the features. So I thought until I make a design on my own, I would use this as my template.
 
-Finally, I am still not sure if I will be writing just Bioinformatics related blogs. I will most likely document things I learn every day, something related to the kind of work I do, or the game I play and maybe whatever comes to my mind randomly. I found a way to organize it so. I hope it works! ( :
+Finally, I am still not sure if I will be writing just Bioinformatics related blogs. I will most likely document things I learn every day, something related to the kind of work I do, or the game I play and maybe whatever comes to my mind randomly. I found a way to organize it so. I hope this works! ( :
