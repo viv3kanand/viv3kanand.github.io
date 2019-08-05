@@ -9,11 +9,11 @@ thumb120:
 summary200: "My first blog post. And trying to install latest version of R"
 ---
 
-_I think I was tryharding to get into writing my first post on this blog. In fact I was looking for the right topic to start with. It didn't work that way. Lately I was fixing the server which has some R version conflict. So I gave it a go, finally!!_
+_I think I was tryharding to get into writing my first post on this blog. In fact, I was looking for the right topic to start with. It didn't work that way. Lately I was fixing the server which has some R version conflict. So I gave it a go, finally!!_
 
 So recently I was been doing a lot of RNA-Seq analysis and my Workstation hanged up because of the load. That's when I decided to migrate to server. It had an [R version 2.15.3](https://cran.r-project.org/src/base/R-2/) pre-installed. Then I installed [Rstudio-server](https://www.rstudio.com/products/rstudio/download-server/) (Pretty basic installation), which makes my life a lot easier.
 
-Most of the Packages for RNA-Seq analysis are from [bioconductor](https://www.bioconductor.org/). So I started installing the _BiocManager_.
+Most of the Packages for RNA-Seq analysis are from [bioconductor](https://www.bioconductor.org/). So I started installing __BiocManager__ (A linker to download bioconductor packages).
 
 ```{r}
 if (!requireNamespace("BiocManager", quietly = TRUE))
@@ -40,7 +40,7 @@ I found this handy tutorial from [here](https://cran.r-project.org/bin/linux/ubu
 
 >As of November 18, 2018 the supported releases are __Xenial Xerus (16.04; LTS)__, Trusty Tahr (14.04; LTS), Bionic Beaver (18.04;LTS), Cosmic Cuttlefish (18.10), and Disco Dingo (19.04)
 
-So Xenial is the right version for me since I'm using Ubuntu version 16.04.
+So Xenial is the right version for me since I'm using Ubuntu version 16.04. Xenial-cran35 for R verson 3.6.
 
 #### Add source to repository
 
@@ -56,13 +56,13 @@ So Xenial is the right version for me since I'm using Ubuntu version 16.04.
 
 `gpg -a --export E298A3A825C0D65DFD57CBB651716619E084DAB9 | sudo apt-key add -`
 
-##### Alternative method just in case if firewall blocking port 11371
+##### Just in case if firewall blocking port 11371
 
 `gpg --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9`
 
 `gpg -a --export E298A3A825C0D65DFD57CBB651716619E084DAB9 | sudo apt-key add -`
 
-They have mentioned many more methods, I'm just mentioning the ones worked fine without any erorrs.
+They have mentioned many more methods. Feel free to explore yourself.
 
 #### Update and install
 
@@ -72,7 +72,7 @@ They have mentioned many more methods, I'm just mentioning the ones worked fine 
 
 Generally, everything will be sorted out by now
 
-#### Read below if you are messed up and getting another error while update and install :P
+#### Read below if you messed up with the installation
 
 Welcome to the club! We all do silly mistakes. This is just beacuse you did some mistake in the beginning and added a non-compatible repository `Trusty Tahr (14.04; LTS), Bionic Beaver (18.04;LTS), Cosmic Cuttlefish (18.10) or Disco Dingo (19.04)` on a 16.04 ubuntu, it will throw another error in installation. And this may still cause a problem even if you redo the whole thing with the right repositories. It is because the `sources.list` file will still have the previous repositories added in it. It can be easily be resolved by commenting few lines in the `sources.list` file.
 
@@ -103,7 +103,7 @@ deb https://cloud.r-project.org/bin/linux/ubuntu xenial-cran35/
 
 As you can see, there are few other versions along with the `xenial-cran35` version. 
 
-Comment the lines match with the link we added to the repository earlier. In my case I have tried with `disco-cran35` which is meant for `Ubuntu 19.04` and `xenial` is for `R version 3.4`.
+Comment the lines match with the link we added to the repository earlier. In my case I have tried with `disco-cran35` which is meant for `Ubuntu 19.04`. Another mistake was I made was adding `xenial` which was for `R version 3.4`. And new bioconductor works only for R version 3.6 and above. Then went back to `xenial-cran35`. Problems of not following the tutorial properly >_>
 
 ```bash
 ## Uncomment the following two lines to add software from Canonical's
