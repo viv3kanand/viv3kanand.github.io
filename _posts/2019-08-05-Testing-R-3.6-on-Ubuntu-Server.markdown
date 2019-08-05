@@ -103,7 +103,7 @@ deb https://cloud.r-project.org/bin/linux/ubuntu xenial-cran35/
 
 As you can see, there are few other versions along with the `xenial-cran35` version. 
 
-Comment the lines match with the link we added to the repository earlier. In my case I have tried with `disco-cran35` which is meant for `Ubuntu 19.04`. Another mistake was I made was adding `xenial` which was for `R version 3.4`. And new bioconductor works only for R version 3.6 and above. Then went back to `xenial-cran35`. Problems of not following the tutorial properly >_>
+Comment the lines match with the link we added to the repository earlier. In my case I have tried with `disco-cran35` which is meant for `Ubuntu 19.04`. Another mistake was I made was adding `xenial` which was for `R version 3.4`. And new bioconductor works only for R version 3.6 and above. Then went back to `xenial-cran35`. Problems of not following the tutorial properly :P.
 
 ```bash
 ## Uncomment the following two lines to add software from Canonical's
