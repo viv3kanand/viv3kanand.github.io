@@ -1,1 +1,0 @@
-location.assign(location.href+"?report=docsum&format=text")
