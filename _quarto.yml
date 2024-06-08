@@ -5,6 +5,7 @@ project:
 website:
   title: "viv3kanand.github.io"
   navbar:
+    background: primary
     right:
       - about.qmd
       - icon: github
@@ -13,8 +14,9 @@ website:
         href: https://twitter.com
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme:
+      light: [flatly, custom.scss]
+      dark: [darkly, custom-dark.scss]
 
 editor: visual
 #
